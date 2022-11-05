@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="wed.css">
+    <title> Chèn liên kết vào trang web với thẻ a trong HTML</title>
+</head>
+
+<body class="trangchu">
+    
+    <div class="phanhoc">
+        <div class="p1">
+            <p><b>
+                    <font size="6px">Bài 5: Chèn liên kết vào trang web với thẻ a trong HTML</font>
+                </b></p>
+            <p>Một thẻ HTML phổ biến tiếp theo mà mình muốn giới thiệu tới các bạn đó chính là thẻ &lt;a
+                href="...">...&lt;/a> có tác dụng để chèn liên kết (link) trong một tài liệu HTML.</p>
+            <li>
+                <font size="5px">Mục lục</font>
+            </li>
+            <li><a href="#1">I. Liên kết (link) là gì?</a></li>
+            <li><a href="#2">II. Chèn liên kết với thẻ a</a></li>
+            <li><a href="#3">III. Một vài thuộc tính hay đi kèm với thẻ a</a></li>
+            <li><a href="#4">IV. Tổng kết</a></li>
+            <h4 id="1">I. Liên kết (link) là gì? </h4>
+            <p class="l11">Trong phạm vi của series bài viết này, ‘liên kết’ là một cầu nối giữa 2 trang web (2 tài liệu
+                HTML) với nhau.</p>
+            <p>Thực sự thì liên kết là cái mà bạn vẫn tiếp xúc hàng ngày khi lướt web, chính là cái mà khi bạn click vào
+                thì trình duyệt sẽ chuyển bạn đến một trang web nào đấy. Nếu bạn vẫn chưa hình dung ra, thì link nó sẽ
+                nhìn như thế này.</p>
+            <p class="l11" align="center"><a href="dangnhap.html">Đây là ví dụ về một đường link</a></p>
+            <p>Rồi, bạn đã thấy nó quen thuộc chưa. Và phần tiếp theo mình sẽ hướng dẫn bạn cách tạo ra một cái tương tự
+                nhé.</p>
+            <h4 id="2">II. Chèn liên kết với thẻ a</h4>
+            <p>
+                Thẻ a trong HTML có cấu trúc như sau:
+                <br>
+                &lt;a href="http://fit.hnue.edu.vn/">Đây là ví dụ về một đường link&lt;/a>
+            </p>
+            <p>
+                Nhìn bạn có thể nhận ra ngay, khi người dùng nhấp vào dòng chữ Đây là ví dụ về một đường link thì trình
+                duyệt sẽ chuyển bạn đến trang web có địa chỉ là http://fit.hnue.edu.vn/. Hóa ra để tạo một đường link với
+                HTML cũng không khó nhỉ.
+            </p>
+            <h4 id="3">III. Một vài thuộc tính hay đi kèm với thẻ a</h4>
+            <p>Ngoài thuộc tính bắt buộc href, thì thẻ a có một số thuộc tính tính tùy chỉnh khác. Cụ thể mình sẽ liệt kê trong bảng dưới đây.</p>
+            <table align="center">
+                <tr>
+                    <th>Thuộc tính</th>
+                    <th>Giá trị</th>
+                    <th>Mô tả</th>
+                </tr>
+                <tr>
+                    <td>tảget</td>
+                    <td>_blank: Mở liên kết trong tab mới<br>
+                        _self: Mở liên kết ở tab hiện tại (mặc định)<br>
+                        _top: Mở liên kết ở tab hiện tại ngay cả khi liên kết nằm trong iframe<br>
+                        _parent: Mở liên kết ở tab cha</td>
+                    <td>
+                        Thể hiện việc mở liên kết mới trong tab như thế nào?
+                    </td>
+                </tr>
+                <tr>
+                    <td>download</td>
+                    <td>Tên file sau khi tải xuống</td>
+                    <td>
+                        Khi thẻ a có thuộc tính này, thì thay vì việc liên kết được mở trong tab, nó sẽ được tải về máy
+                    </td>
+                </tr>
+                <tr>
+                    <td>rel</td>
+                    <td>alternate<br>
+                        author<br>
+                        bookmark<br>
+                        external<br>
+                        help<br>
+                        license<br>
+                        next<br>
+                        nofollow<br>
+                        noreferrer<br>
+                        noopener<br>
+                        prev<br>
+                        search<br>
+                        tag</td>
+                    <td>Thể hiện mối quan hệ giữa hai trang web được liên kết.
+                        Một vài giá trị của thuộc tính này có giá trị quan trọng trong SEO.</td>
+                </tr>
+            </table>
+            <h4 id="4">IV. Tổng kết</h4>
+            <p>Thẻ a là một thẻ đơn giản và khá hay ho đúng không. Nếu có gì không hiểu, bạn có thể inbox mình tại fanpage Tự học lập trình, mình sẽ giúp đỡ.</p>
+        </div>
+        <div class="p2 ">
+            <ul><a href="bai2.html">
+                    <li>
+                        <p>Bài 2: Các khái niệm thường gặp trong HTML</p>
+                        <ul><img src="khainiem.jpg" alt=""></ul>
+                </a>
+
+                </li><a href="bai4.html">
+                    <li>
+                        <p>Bài 4: Các thẻ định dạng văn thường gặp trong HTML</p>
+                        <ul><img src="the.jpg" alt=""></ul>
+                </a>
+                </li> <a href="bai6.html">
+                    <li>
+                        <p>Bài 6: Chèn hình ảnh vào trang web với thẻ img trong HTML</p>
+                        <ul><img src="theimg.jpg" alt=""></ul>
+                </a>
+                <a href="bai7.html">
+                    <li>
+                        <p>Bài 7: Chèn một trang web khác vào trang web của mình với thẻ iframe trong HTML</p>
+                        <ul><img src="theiframe.jpg" alt="" class="anh7"></ul>
+                </a>
+
+            </ul>
+        </div>
+        <div class="p3">
+            <p>Gắn quảng cáo sau này </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

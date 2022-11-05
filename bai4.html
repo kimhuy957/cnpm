@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="wed.css">
+    <title>Ngôn ngữ HTML là gì? </title>
+</head>
+
+<body class="trangchu">
+    
+    <div class="phanhoc">
+        <div class="p1">
+            <p><b>
+                    <font size="6px">Bài 4: Các thẻ định dạng văn thường gặp trong HTML</font>
+                </b></p>
+            <p>Như ở bài trước mình đã giới thiệu về cấu trúc của một trang HTML thì bạn thấy rằng một tài liệu HTML
+                được cấu tạo hoàn toàn từ các thẻ. Hay cũng có thể nói các thẻ HTML chính là bản chất của tài liệu HTML.
+                Vậy bạn chỉ nắm rõ được HTML khi bạn hiểu rõ được các thẻ cấu tạo nên nó. Vì vậy mà trong series này,
+                mình có dành một số lượng bài nhất định để trình bày về cách sử dụng các thẻ phổ biến trong HTML, mà mở
+                đầu chính là bài này – Các thẻ định dạng văn thường gặp trong HTML.</p>
+
+            <li>
+                <font size="5px">Mục lục</font>
+            </li>
+            <li><a href="#1">I. Các thẻ heading</a></li>
+            <li><a href="#2">II. Các thẻ định dạng văn bản</a></li>
+            <li><a href="#3">III. Các thẻ định dạng đoạn văn bản</a></li>
+            <li><a href="#4">IV. Tự định dạng thông qua thuộc tính style</a></li>
+            <li><a href="#41">&nbsp;&nbsp;4.1 Định dạng màu chữ</a></li>
+            <li><a href="#42">&nbsp;&nbsp;4.2 Căn lề văn bản</a></li>
+            <li><a href="#43">&nbsp;&nbsp;4.3 Thay đổi kích thước</a></li>
+            <li><a href="#5">V. Tổng kết</a></li>
+            <h4 id="1">I. Các thẻ heading</h4>
+            <p>Heading là các thẻ được sử dụng để đánh dấu tiêu đề cho nội dung trang web. Trong HTML, các thẻ heading
+                được chia làm 6 cấp bậc, với kích thước nhỏ dần như sau:</p>
+            <br><br>
+            <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HEADING 1</h1>
+            <br>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HEADING 2</h2>
+            <br>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HEADING 3</h3>
+            <br>
+            <h4>&nbsp;HEADING 4</h4>
+            <br>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HEADING 5</h5>
+            <br>
+            <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HEADING 6</h6><br>
+            <p>Cụ thể cú pháp của các thẻ heading trong HTML như sau:</p>
+            <p>
+                <li>1 |&lt; h1>Heading &lt;/h1></li>
+                <li>2 |&lt; h2>Heading &lt;/h2></li>
+                <li>3 |&lt; h3>Heading &lt;/h3></li>
+                <li>4 |&lt; h4>Heading &lt;/h4></li>
+                <li>5 |&lt; h5>Heading &lt;/h5></li>
+                <li>6 |&lt; h6>Heading &lt;/h6></li>
+            </p>
+            <p>
+                Giống như bạn trình bày một trang sách, các mục Một lớn, Hai lớn sẽ ưu tiên được đặt trong các thẻ h1,
+                h2, các mục nhỏ hơn thì sử dụng các thẻ h3, h4…
+                <br>
+                Đặc biệt, các công cụ tìm kiếm như Google sẽ dựa vào các thẻ heading này để nhận biết về cấu trúc nội
+                dung trang web của bạn, vì vậy nếu bạn có làm việc trong nghề SEO thì cũng nên để ý tới việc sử dụng các
+                thẻ heading hợp lý.
+            </p>
+            <h4 id="2">II. Các thẻ định dạng văn bản</h4>
+            <p>Thẻ định dạng văn bản trong HTML rất phong phú. Cụ thể bạn có thể dễ dạng định dạng một dòng chữ đậm, chữ
+                nghiêng, chữ gạch chân bằng HTML.</p>
+            <p>Ví dụ</p>
+            <b>Dòng chữ này đậm</b>
+            <i>Dòng chữ này nghiêng</i>
+            <u>Dòng chữ này gạch chân</u>
+            <s>Dòng chữ này bị gạch ngang</s>
+            <p><b>Các thẻ định dạng văn bản</b> này rất dễ học và dễ nhớ, vì vậy mình có tổng hợp một số thẻ hay dùng
+                trong bảng dưới đây để các bạn tiện theo dõi.</p>
+            <table>
+                <tr>
+                    <th>Code</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>&lt;b>Dòng chữ này đậm&lt;/b></td>
+                    <td><b>Dòng chữ này đậm</b></td>
+                </tr>
+                <tr>
+                    <td>&lt;i>Dòng chữ này nghiêng&lt;/i></td>
+                    <td><i>Dòng chữ này nghiêng</i></td>
+                </tr>
+                <tr>
+                    <td>&lt;u>Dòng chữ này gạch chân&lt;/u></td>
+                    <td><u>Dòng chữ này gạch chân</u></td>
+                </tr>
+                <tr>
+                    <td>&lt;s>Dòng chữ này bị gạch ngang&lt;/s></td>
+                    <td><s>Dòng chữ này bị gạch ngang</s></td>
+                </tr>
+                <tr>
+                    <td>&lt;b>C&lt;/b>&lt;sub>2&lt;/sub>&lt;b>H&lt;/b>&lt;sub>4&lt;/sub></td>
+                    <td><b>C</b><sub>2</sub><b>H</b><sub>4</sub></td>
+                </tr>
+                <tr>
+                    <td>&lt;b>a&lt;/b>&lt;sup>2&lt;/sup> + &lt;b>b&lt;/b>&lt;sup>2&lt;/sup></td>
+                    <td><b>a</b><sup>2</sup> + <b>b</b><sup>2</sup></td>
+            </table>
+            <h4 id="3">III. Các thẻ định dạng hình ảnh</h4>
+            <p>Ngoài việc định dạng văn bản nói chung, HTML còn cho bạn định dạng từng đoạn văn bản. Cụ thể, bạn có thể
+                đánh dấu một đoạn văn bản bằng cách sử dụng thẻ &lt;p>...&lt;/p>, hay quản lý việc xuống dòng bằng thẻ
+                &lt;br />.</p>
+            <p>Ví dụ</p>
+            <table>
+                Đây là đoạn văn thứ nhất. HTML là chữ viết tắt của Hyper Text Markup Language, dịch ra có nghĩa là Ngôn
+                ngữ đánh dấu siêu văn bản. Trong lập trình web, HTML có nhiệm vụ là xây dựng lên bố cục trang web.
+                <br>
+                <tr>
+                    <td>
+                        Đây là đoạn văn thứ nhất. HTML là chữ viết tắt của Hyper Text Markup Language, dịch ra có nghĩa
+                        là Ngôn ngữ đánh dấu siêu văn bản. Trong lập trình web, HTML có nhiệm vụ là xây dựng lên bố cục
+                        trang web.
+                        <br><br>
+                        Đây là đoạn văn thứ 2. Ở dạng nguyên thể, HTML chỉ là văn bản đơn thuần, chỉ khi đi qua bộ biên
+                        dịch của trình duyệt nó mới có thể trở thành như những gì bạn trông thấy.
+                        <br><br>
+                        Nếu bạn muốn ngắt dòng,
+                        bạn chỉ cần đặt thẻ &lt;br> vào chỗ muốn xuống dòng
+                    </td>
+                </tr>
+            </table>
+            <p>Mỗi một đoạn văn bản trên đều được đặt trong cặp thẻ &lt;p>...&lt;/p>. Khi nội dung đặt trong cặp thẻ
+                này, nó sẽ tự động được ngăn cách với các phần tử bên dưới một khoảng nhất định, đủ để bạn phân biệt
+                rạch ròi nội dung đó thuộc về đoạn văn bản nào.
+
+                Trường hợp bạn muốn xuống hàng lưng chừng câu, bạn chỉ cần đặt vào chỗ muốn xuống hàng thẻ &lt;br> là
+                xong.</p>
+            <h4 id="4">IV. Tự định dạng thông qua thuộc tính style</h4>
+            <p>Các thẻ định dạng văn bản trong HTML tuy phong phú, nhưng chưa đủ độ biến hóa để có thể thể hiện được hết
+                óc sáng tạo của các web developer. Chính vì vậy mà HTML cung cấp một thuộc tính có tên là style để giúp
+                các developer có thể tùy chỉnh thêm các thuộc tính nâng cao khác.</p>
+            <h5 id="4.1">Định dạng màu chữ</h5>
+            <p>Các màu cơ bản như xanh, đỏ, tím, vàng, đen,… trong HTML được mô tả bằng cách từ Tiếng Anh tương ứng, như
+                red là đỏ, black là đen, green là xanh lá cây,… Để định dạng lại màu chữ, bạn sử dụng theo cú pháp như
+                sau:</p>
+            <p>&lt;tagname style="color: colorname">...&lt;/tagname></p>
+            <p>Ví dụ</p>
+            <table>
+                <tr>
+                    <th>Code</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>&lt;b style="color: red">Chữ đậm màu đỏ&lt;/b></td>
+                    <td><b style="color: red">Chữ đậm màu đỏ</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        Giá gốc &lt;s style="color: blue">1000.000&lt;/s>
+                    </td>
+                    <td>
+                        <s style="color: blue">1000.000</s>
+                </tr>
+            </table>
+            <h5 id="4.2">Căn lề văn bản</h5>
+            <p>Nếu bạn muốn căn lề trái, phải, giữa, căn đều hai bên cho đoạn văn, bạn có thể sử dụng cú pháp:</p>
+            <p>&lt;dic style="text-align: align">...&lt;/dic></p>
+            <p>Với align nhận các giá trị được thể hiện trong bảng dưới</p>
+            <table>
+                <tr>
+                    <th>align</th>
+                    <th>giải thích</th>
+                </tr>
+                <tr>
+                    <td>left</td>
+                    <td>Căn trái</td>
+                </tr>
+                <tr>
+                    <td>right</td>
+                    <td>Căn phải</td>
+                </tr>
+                <tr>
+                    <td>center</td>
+                    <td>Căn giữa</td>
+                </tr>
+                <tr>
+                    <td>justify</td>
+                    <td>Căn đều hai bên</td>
+                </tr>
+
+            </table>
+            <div style="text-align: left">Căn trái</div>
+            <div style="text-align: center">Căn giữa</div>
+            <div style="text-align: right">Căn phải</div>
+            <div style="text-align: justify;">Căn đều</div>
+            <p><b>Code HTML của ví dụ trên</b></p>
+            <p>
+                1|&lt;div style="text-align: left">Căn trái&lt;/div>
+                2|&lt;div style="text-align: center">Căn giữa&lt;/div>
+                3|&lt;div style="text-align: right">Căn phải&lt;/div>
+                4|&lt;div style="text-align: justify;">Căn đều&lt;/div>
+            </p>
+            <p class="l11">Với trường hợp căn đều, bạn cần phải thử với một đoạn văn dài mới cảm thấy sự khác biệt</p>
+            <h5 id="4.3">Thay đổi kích thước</h5>
+            <p>Trong trường hợp bạn muốn thay đổi kích thước văn bản, bạn có thể sử dụng cú pháp:</p>
+            &lt;tagname style="font-size: size">...&lt;/tagname>
+            <p>Ví dụ:</p>
+            <b style="font-size: 20px">Dòng chữ này lớn 20 pixel</b>
+            <b style="font-size: 18px">Dòng chữ này lớn 18 pixel</b>
+            <p>
+                Code HTML của ví dụ trên
+            </p>
+            <p>
+                1
+                2
+                &lt;b style="font-size: 20px">Dòng chữ này lớn 20 pixel&lt;/b>
+                &lt;b style="font-size: 18px">Dòng chữ này lớn 18 pixel&lt;/b>
+            </p>
+            <h4 id="5">Tổng kết</h4>
+            <p>Việc căn chỉnh, định dạng một nội dung khoa học và đẹp mắt sẽ khiến người đọc cảm thấy dễ chịu khi trải
+                nghiệm trang web của bạn, vì vậy mà thao tác định dạng văn bản là điều cực kỳ quan trọng và cần thiết.
+                Mặt khác, văn bản lại là một trong những nội dung phổ biến trên các website hiện nay, điều này càng nhắc
+                nhở bạn phải nắm rõ các cách căn chỉnh văn bản. Vì vậy mà mình muốn bạn hãy lưu ý lại bài viết này của
+                mình, để khi cần sẽ có tài liệu để tra cứu.</p>
+        </div>
+        <div class="p2 ">
+            <ul><a href="bai2.html">
+                    <li>
+                        <p>Bài 2: Các khái niệm thường gặp trong HTML</p>
+                        <ul><img src="khainiem.jpg" alt=""></ul>
+                </a>
+                </li> <a href="bai3.html">
+                    <li>
+                        <p>Bài 3: Cấu trúc trang HTML</p>
+                        <ul><img src="cautruc.jpg" alt="" class="ct1"></ul>
+                </a>
+                </li><a href="bai5.html">
+                    <li>
+                        <p>Bài 5: Chèn liên kết vào trang web với thẻ a trong HTML</p>
+                        <ul><img src="thea.jpg" alt=""></ul>
+                </a>
+                </li><a href="bai6.html">
+                    <li>
+                        <p>Bài 6: Chèn hình ảnh vào trang web với thẻ img trong HTML</p>
+                        <ul><img src="theimg.jpg" alt=""></ul>
+                </a>
+                </li>
+            </ul>
+        </div>
+        <div class="p3">
+            <p>Gắn quảng cáo sau này </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

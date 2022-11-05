@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="wed.css">
+	<script src="dangky.js"></script>
+	<link rel="shortcut icon" type="image/png" href="logo.png">
+	<title>trang chủ</title>
+</head>
+
+<body>
+		<div class="menungang" style="--ct:#00FFC6;">
+			<ul class="ngang1">
+				<li><a href="" ><img src="logochu.png" alt="Trang học hiểu" class="alogo"></a></li>
+				<li ><input title="text" name="search" class="search" ></li>
+				<li ><a href="#" class="icon">
+					<ion-icon name="search-outline"></ion-icon></a></li>
+				<li class="khungdangnhap"><a href="dangnhap.html"> <p>Đăng nhập</p></a>
+				</li>
+			</ul>
+		</div>
+		<div class="menudoc">
+		<div class="menudoc1">
+			<div class="n1"><img src="a1.png" class="anh1">
+				<ul class="n2 l0">
+					<li>
+						<a href="trang11.html" class="l05" target="hochieu"style="--cc:#797575;" target="hochieu" ><ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+							Giới thiệu các ngôn ngữ</a>
+
+					<ul class="l1">
+						<li>
+							<a href="gthtml1.html" target="hochieu"style="--cc:#02d9ff8a;"target="hochieu" ><ion-icon name="logo-html5" ></ion-icon>HTML</a></li>
+						<li>
+							<a href="gtcss1.html" target="hochieu"style="--cc:#ff7300;"target="hochieu" ><ion-icon name="logo-css3" ></ion-icon>CSS</a></li>
+						<li>
+							<a href="gtjs1.html" target="hochieu"style="--cc:#f5f104;"target="hochieu" ><ion-icon name="logo-nodejs" ></ion-icon>JS</a></li>
+					</ul>
+					</li>
+					<li>
+						<a href="#" target="hochieu"style="--cc:#f305fc;">
+							<ion-icon name="book-outline"></ion-icon>
+							Khóa học </a>
+						<ul class="l1 nav" id="d1">
+							<li>
+								<a href="html11.html" target="hochieu"style="--cc:#02d9ff8a;"><ion-icon name="logo-html5"></ion-icon>
+									HTML</a>
+							<ul class="l2">
+								<li><a href="update.html"  target="hochieu">Bài học</a></li>
+								<li><a href="update.html"  target="hochieu">Bài tập</a></li>
+
+							</ul>
+							</li>
+							<li>
+								<a href="gtcss1.html" target="hochieu"style="--cc:#ff7300;"><ion-icon name="logo-css3"></ion-icon>
+									CSS</a>
+								<ul class="l2">
+									<li><a href="update.html"  target="hochieu">Bài học</a></li>
+									<li><a href="update.html"  target="hochieu">Bài tập</a></li>
+									
+								</ul>
+							</li>
+							<li>
+								<a href="gtjs1.html" target="hochieu"style="--cc:#f5f104;"><ion-icon name="logo-nodejs"></ion-icon>JS</a>
+								<ul class="l2">
+									<li><a href="update.html"  target="hochieu">Bài học</a></li>
+									<li><a href="update.html"  target="hochieu">Bài tập</a></li>
+									
+								</ul></li>
+						</ul>
+					</li>
+				
+				</ul>
+			</div>
+
+		</div>
+		<div class="menudoc2">
+			<iframe  name="hochieu" src="trang11.html" border="0" id="hochieu"></iframe>
+		</div>
+	</div>
+	<div class="thanhcuoi">
+		<ul>
+			<li><a href="http://fit.hnue.edu.vn/" target="_blank"style="--cc:#7976768a;">
+				<p ><ion-icon name="globe-outline"></ion-icon>
+				<p > Website</p></a></li>
+			<li><a href="https://goo.su/1kJ24Tj" target="_blank"style="--cc:#1198f5;">
+				<p ><ion-icon name="logo-facebook"></ion-icon>
+				<p>Facebook</p>
+			</a></li>
+			<li><a href="https://goo.su/Zp1sOHZ" target="_blank"style="--cc:#ff1a1a;">
+				<p ><ion-icon name="logo-youtube"></ion-icon>
+				<p>Youtube</p>
+			</a></li>
+			<li><a href="mailto: cntt@hnue.edu.vn" target="_blank"  style="--cc:#130d0d;">
+				<p ><ion-icon name="at-outline" ></ion-icon>
+				<p> Gmail</p>
+			</a></li>
+
+
+		</ul>
+	</div>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script>
+		const n1 = document.querySelector('.n1');
+		const menudoc1 = document.querySelector('.menudoc1');
+		n1.onclick = function () {
+			menudoc1.classList.toggle('open');
+		}
+		
+	</script>
+</body>
+
+</html>

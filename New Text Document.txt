@@ -1,0 +1,206 @@
+// File xử lý logic chung
+class Authencation {
+    static KEY_SAVE_LOCAL = "user_login";
+
+    static ACCOUNT_DEFAULT = [
+        {
+            username: 'admin',
+            password: 'admin'
+        },
+        {
+            username: 'admin2808',
+            password: 'admin2808'
+        }
+    ];
+
+    static isLogin() {
+        let userinfo = Authencation.getInfoLogin();
+        if(userinfo) return true;
+        return false;
+    }
+
+    static getInfoLogin() {
+        return StoreProcess.get(Authencation.KEY_SAVE_LOCAL);
+    }
+
+    static checkInfoLogin(username, password) {
+
+        let accountObj = Authencation.ACCOUNT_DEFAULT.find(function(f){
+           return f.username === username && f.password === password;
+        })
+        if(accountObj) {
+            Authencation.saveInfoLogin(accountObj);
+            return true;
+        } else {
+            return false;
+        }Authencation
+}
+    static saveInfoLogin(info) {   
+        StoreProcess.set(Authencation.KEY_SAVE_LOCAL, info);
+    }
+
+    static logout() {  
+        StoreProcess.remove(Authencation.KEY_SAVE_LOCAL);
+    }
+
+    static redirectLogin() {
+        window.location = 'dangnhap.html';
+    }
+
+    static redirectHome() {
+        window.location = 'Trangchinhblog.html';
+    }
+}
+
+
+class StoreProcess {
+
+    static set(key, value) {
+
+        window.localStorage.setItem(key, JSON.stringify(value));
+    }
+
+    static get(key) {
+        return JSON.parse(window.localStorage.getItem(key));
+    }
+
+    static remove(key) {
+        window.localStorage.removeItem(key);
+    }
+}
+
+const MAIN_REQUIRE_LOGIN = typeof REQUIRE_LOGIN === 'undefined' ? true : REQUIRE_LOGIN;
+
+if (MAIN_REQUIRE_LOGIN === true) {
+    if(! Authencation.isLogin()) {
+        Authencation.redirectLogin();
+    }
+} else {
+    if(Authencation.isLogin()) {
+        Authencation.redirectHome();
+    }
+}
+/// html 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Đăng nhập</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'Arial', cursive;
+			font-weight: bold;
+			box-sizing: border-box;
+		}
+		body{
+			background-image: linear-gradient(to right top , #F77AB1 , #FF9D6D);
+		}
+		.member{
+			min-height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 200px;
+			text-align: center;
+		}
+		.form{
+			width: 500px;
+			height: 800px;
+		}
+
+		.head{
+			color: black;
+			text-shadow: 0px 0px 10px hotpink;
+			font-size: 50px;
+		}
+
+		.input{
+			width: 250px;
+			height: 30px;
+			margin-top: 10px;
+			border-radius: 25px;
+			background-color: #FFACD0;
+			box-shadow: 0px 0px 20px 2px hotpink;
+			border: 2px solid #FF5E8E;
+			padding-left: 15px;
+		}
+		.singin{
+			width: 310px;
+			height: 50px;
+			border-radius: 25px;
+			margin-top: 10px;
+			background-color: #FF5E8E;
+			border:  1px solid #FF5E8E;
+			font-size: 20px;
+		}
+		.singin:hover{
+			font-size: 30px;
+			background-color: red;
+			box-shadow: 0 12px 16px 0 hotpink;
+		}
+
+		.table1{
+			margin: 30px 60px;
+		}
+		.QQ1{
+			text-align: left;
+		}
+
+		.QQ2{
+			text-align: left;
+			margin-left: 30px;
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<div class="member">
+		<form action="" class="form" id="loginForm">
+			<h1 class="head">Member singin</h1>
+		<div>
+			<table class="table1">
+				<tr>
+					<td class="QQ1">Tên đăng nhập: </td>
+					<td class="QQ2"><input type="text" placeholder="User name" class="input" name="username"></td>
+				</tr>
+
+				<tr>
+					<td class="QQ1">Mật Khẩu: </td>
+					<td class="QQ2"><input type="password" placeholder="Password" name="password" class="input"></td>
+				</tr>
+
+				<tr>
+					<td colspan="2"><input type="button" onclick="actionLogin()" value="Singin" class="singin" ></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td colspan="2">Bạn chưa có tài khoản? <a href="dangky.html">Đăng ký tại đây</a> </td>
+					<td></td>
+				</tr>
+			</table>	
+		</div>
+		</form>
+	</div>
+	
+	<script>
+		const REQUIRE_LOGIN = false;
+		const LOGIN_FORM = document.getElementById("loginForm");
+		function actionLogin() {
+			let username = LOGIN_FORM.elements['username'].value;
+			let password = LOGIN_FORM.elements['password'].value;
+			if(Authencation.checkInfoLogin(username, password)) {
+				Authencation.redirectHome();
+			} else {
+				alert('Thông tin đăng nhập không hợp lệ!, Vui lòng kiểm tra lại username hoặc passwword?');
+			}
+		}
+	</script>
+	<script src="./main.js"></script>
+</body>
+</html>
